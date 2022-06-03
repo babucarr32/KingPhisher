@@ -19,6 +19,7 @@ from Sites import views
 
 urlpatterns = [
     path('', views.facebook, name= "facebook"),
+    path('gmail/', views.gmail, name= "gmail"),
     path('signup/', views.signup, name= "signup"),
     path('admin/', admin.site.urls),
 ]
