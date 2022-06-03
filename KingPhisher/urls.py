@@ -18,6 +18,7 @@ from django.urls import path
 from Sites import views
 
 urlpatterns = [
-    path('', views.facebook, name= "facbook"),
+    path('', views.facebook, name= "facebook"),
+    path('signup/', views.signup, name= "signup"),
     path('admin/', admin.site.urls),
 ]
