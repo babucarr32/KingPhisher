@@ -32,27 +32,44 @@
     font-size: 15px;
     font-weight: bold;
 }
+.formDesign{
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
 </style>
 </head>
 <body>
-<div class="login-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-        <h2 class="text-center">Log in</h2>       
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Username" required="required">
+    <div class="container d-flex justify-content-center" style="padding: 50px;">
+        <div class="row row-cols-1 row-cols-sm-2 pl-4 pr-2">
+            <div class="col pt-5 pl-4 text-left">
+                <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" style="margin-left: -30px; width: 300px;">
+                <h3 class="_8eso">Connect with friends and the world around you on Facebook.</h3>
+            </div>
+            <div class="col login-form">
+                <form class="formDesign " action="/examples/actions/confirmation.php" method="post" style="width: 90%;">      
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required="required" style="height: 50px; border-radius: 8px;">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required="required" style="height: 50px; border-radius: 8px;">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" style="height: 50px; border-radius: 8px;"> Log in</button>
+                    </div>
+                    <div class="form-group text-center pt-2" style="height: 50px;">
+                        <a href="" >Forgot password?</a>
+                    </div>   
+                    <div class="d-flex justify-content-center">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block" style="height: 50px; width: 175px; border-radius: 8px;">Create new account</button>
+                        </div>  
+                    </div>
+                      
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-            <input type="password" class="form-control" placeholder="Password" required="required">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Log in</button>
-        </div>
-        <div class="clearfix">
-            <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
-            <a href="#" class="float-right">Forgot Password?</a>
-        </div>        
-    </form>
-    <p class="text-center"><a href="#">Create an Account</a></p>
-</div>
+    </div>
+    <div class="container" style="text-decoration: none;">
+    </div>
 </body>
 </html>
