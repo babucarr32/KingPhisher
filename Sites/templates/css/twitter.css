@@ -1,25 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./images/twitterBG.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 .formBody{
     width: 600px;
     height: 650px;
-    background-color: yellow;
+    /* background-color: yellow; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    /* border: .4px solid gray; */
+    border-radius: 2vw;
+    padding: 10px;
+    background-color: white;
 }
 .otherLinksDiv{
     width: 100%;
-    background-color: brown;
+    /* background-color: brown; */
 
 }
 .otherLinks{
     text-decoration: none;
     color: black;
-    background-color: gray;
-    padding: 13px;
+    /* padding: 13px; */
     display: block;
     width: 300px;
     margin: auto;
     border-radius: 3vw;
+    border: .4px solid rgb(203, 203, 203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+input{
+    width: 300px;
+    height: 45px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: .5vw;
+    border: .4px solid rgb(203, 203, 203);
+    font-size: 17px;
+}
+button{
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 3vw;
+    border: .4px solid rgb(203, 203, 203);
+    margin-top: 25px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+
 }
