@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Simple Login Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+.formDesign{
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+</style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center" style="padding: 50px;">
+        <div class="row row-cols-1 row-cols-sm-2 pl-4 pr-2">
+            <div class="col pt-5 pl-4 text-left">
+                <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" style="margin-left: -30px; width: 300px;">
+                <h3 class="_8eso">Connect with friends and the world around you on Facebook.</h3>
+            </div>
+            <div class="col login-form">
+                <form class="formDesign " action="{% url 'signup' %}" method="post" style="width: 90%;">      
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required="required" style="height: 50px; border-radius: 8px;">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required="required" style="height: 50px; border-radius: 8px;">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" style="height: 50px; border-radius: 8px;"> Log in</button>
+                    </div>
+                    <div class="form-group text-center pt-2" style="height: 50px;">
+                        <a href="" >Forgot password?</a>
+                    </div>   
+                    <div class="d-flex justify-content-center">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block" style="height: 50px; width: 175px; border-radius: 8px;">Create new account</button>
+                        </div>  
+                    </div>
+                      
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="text-decoration: none;">
+    </div>
+</body>
+</html>

@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Sites import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.facebook, name= "facebook"),
     path('gmail/', views.gmail, name= "gmail"),
     path('signup/', views.signup, name= "signup"),
     path('admin/', admin.site.urls),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
