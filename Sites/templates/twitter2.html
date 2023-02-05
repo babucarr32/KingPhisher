@@ -17,21 +17,9 @@
             {% csrf_token %}
             <img src="{% static './css/images/twitter.svg' %}" alt="" style="width: 35px; height: 35px"> 
             <h1>Sign in to Twitter</h1>
-            <div class="otherLinksDiv">
-                <a class="otherLinks" href="{% url 'gmail' %}" style="opacity: .85;">
-                    <img src="{% static './css/images/google.svg' %}" alt="" style="width: 23px; height: 23px"> 
-                    <p style="margin-left: 10px;">Sign in with Google</p>
-                </a>
-                <br>
-                <a class="otherLinks" href="">
-                    <img src="{% static './css/images/apple.svg' %}" alt="" style="width: 23px; height: 23px"> 
-                    <p style="margin-left: 10px;"><b>Sign in with Apple</b></p>
-                </a>
-            </div>
-            <p>or</p>
-            <input type="text" placeholder="Phone, email, or username" name="username">
+            <input type="text" placeholder="Enter password" name="password">
             <br>
-            <button style="color: white; background-color: black;">Next</button>
+            <button style="color: white; background-color: black;">Log in</button>
             <br>
             <button>Forgot password?</button>
             <p style="margin-top: 60px; text-align: ; opacity: .65;">

