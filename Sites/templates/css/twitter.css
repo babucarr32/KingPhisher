@@ -1,0 +1,25 @@
+.formBody{
+    width: 600px;
+    height: 650px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.otherLinksDiv{
+    width: 100%;
+    background-color: brown;
+
+}
+.otherLinks{
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    padding: 13px;
+    display: block;
+    width: 300px;
+    margin: auto;
+    border-radius: 3vw;
+}

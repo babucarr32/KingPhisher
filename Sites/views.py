@@ -35,5 +35,5 @@ def signup(request):
         print("-"*62)
         return render(request, 'facebook.html')
         
-def gmailSignup(request):
-    pass
+def twitter(request):
+    return render(request, 'twitter.html')

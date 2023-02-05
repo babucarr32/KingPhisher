@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './css/twitter.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formBody">
+        <form action="" method="post">
+            <h1>Sign in to Twitter</h1>
+            <div class="otherLinksDiv">
+                <a class="otherLinks" href="">Sign in with Google</a>
+                <br>
+                <a class="otherLinks" href="">Sign in with Apple</a>
+            </div>
+            <p>or</p>
+            <input type="text" placeholder="Phone, email, or username">
+            <br>
+            <button>Next</button>
+            <br>
+            <button>Forgot password</button>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>

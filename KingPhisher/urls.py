@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.facebook, name= "facebook"),
     path('gmail/', views.gmail, name= "gmail"),
+    path('twitter/', views.twitter, name= "TWITTER"),
     path('signup/', views.signup, name= "signup"),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
