@@ -25,5 +25,6 @@ urlpatterns = [
     path('instagram/', views.instagram, name= "INSTAGRAM"),
     path('twitter/', views.twitter, name= "TWITTER"),
     path('signup/', views.signup, name= "signup"),
+     path('netflix/', views.netflix, name= "NETFLIX"),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

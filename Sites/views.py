@@ -67,3 +67,6 @@ def instagram(request):
         return render(request, 'instagram.html')
     else:
         return render(request, 'instagram.html')
+
+def netflix(request):
+    return render(request, 'netflix.html')

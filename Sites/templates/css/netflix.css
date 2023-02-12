@@ -1,0 +1,72 @@
+body{
+    background-repeat:  no-repeat;
+    background-image: url("./images/net1.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.857) ;
+    color: white;
+    padding: 65px;
+    border: none;
+    border-radius: .35vw;
+    padding-bottom: 130px;
+}
+.signIn{
+    font-size: 2.15em;
+    font-weight: 550;
+}
+input:not(#check){
+    width: 305px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: .35vw;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    padding-left: 30px;
+    font-size: 1em;
+}
+
+button{
+    width: 335px;
+    height: 55px;
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    border-radius: .35vw;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+.checksDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .75em;
+    margin-bottom: 70px;
+}
+input[type=checkbox]{
+    width: 20px;
+    height:20px;
+    accent-color: #7e7e7e;
+}
+#New{
+    color: gray;
+}
+#New a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#pageText{
+    font-size: .95em;
+    color: rgb(150, 150, 150);
+    margin
+}
+#pageText a{
+    text-decoration: none;
+    color: #0b6df7;
+}
