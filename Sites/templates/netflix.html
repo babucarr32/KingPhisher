@@ -9,21 +9,39 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post">
-            {% csrf_token %}
-            <p class="signIn">Sign In</p>
-            <input type="text" placeholder="Email or phone number" name="username"><br>
-            <input type="text" placeholder="password" name="paswo
-            "><br>
-            <button>Sign In</button>
-            <div class="checksDiv">
-                <input id="check" type="checkbox" name="" id="" checked>
-                <p>Need help?</p>
-            </div>
-        </form>
-        <p id="New">New to Netflix? <b><a href="">Sign up now</a></b>.</p>
-        <p id="pageText">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></p>
+    <header>
+        <img src="{% static './css/images/Netflix_2015_logo.svg' %}" alt="">
+    </header>
+    <div class="gray">
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                <p class="signIn">Sign In</p>
+                <input type="text" placeholder="Email or phone number" name="username"><br>
+                <input type="text" placeholder="password" name="password"><br>
+                <button>Sign In</button>
+                <div class="checksDiv">
+                    <div class="remember">
+                        <input id="check" type="checkbox" name="" id="" checked>
+                        <label for="">Remember me</label>
+                    </div>
+                    <p><a id="neeHelp" href="">Need help?</a></p>
+                </div>
+            </form>
+            <p id="New">New to Netflix? <b><a href="">Sign up now</a></b>.</p>
+            <p id="pageText">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></p>
+        </div>
     </div>
+    <footer>
+        <p><a href="">Questions? Contact us.</a></p>
+        <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Cookie Preferences</a></li>
+            <li><a href="">Corporate Information</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
