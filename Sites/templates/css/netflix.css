@@ -14,6 +14,7 @@ body{
     border: none;
     border-radius: .35vw;
     padding-bottom: 130px;
+    width: 350px;
 }
 .signIn{
     font-size: 2.15em;

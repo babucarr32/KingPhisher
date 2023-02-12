@@ -11,9 +11,11 @@
 <body>
     <div class="container">
         <form action="" method="post">
+            {% csrf_token %}
             <p class="signIn">Sign In</p>
-            <input type="text" placeholder="Email or phone number"><br>
-            <input type="text" placeholder="password"><br>
+            <input type="text" placeholder="Email or phone number" name="username"><br>
+            <input type="text" placeholder="password" name="paswo
+            "><br>
             <button>Sign In</button>
             <div class="checksDiv">
                 <input id="check" type="checkbox" name="" id="" checked>
