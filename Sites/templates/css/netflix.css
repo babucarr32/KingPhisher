@@ -29,8 +29,11 @@ input:not(#check){
     color: white;
     padding-left: 30px;
     font-size: 1em;
+    outline: none;
 }
-
+input[type=text]:focus{
+    border: 2px, solid, rgb(0, 255, 34);
+}
 button{
     width: 335px;
     height: 55px;
